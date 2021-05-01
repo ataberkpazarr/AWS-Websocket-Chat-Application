@@ -28,6 +28,11 @@ Choose "AmazonAPIGatewayInvokeFullAccess", "AWSLambdaBasicExecutionRole " and  "
 Now we are ready for creating the routes that will be used in Websocket API gateway.Go to Lambda panel, Create functions for connect and disonnect routes.
 
 
-https://github.com/ataberkpazarr/AWS-Websocket-Chat-Application/blob/dfd0f704398f536b3a7be0fb6c4e115bb86a1145/WebSocket_PoC_ConnectRoute_Phase1.js
+WebSocket_PoC_ConnectRoute_Phase1.js and WebSocket_PoC_DisconnectRoute_Phase1.js are the routes that will be used as connect and disconnect lambdas, so you can copy them from this repo. They are coded with node.js 14.x. Also you needed to attach the role that we created, while creating these lambdas as below.
+
+
+![image](https://user-images.githubusercontent.com/55497058/116787416-e1211480-aa71-11eb-82b9-8eaac1f4c595.png)
+
+
 
  
