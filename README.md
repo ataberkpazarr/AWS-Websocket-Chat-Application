@@ -61,12 +61,32 @@ As you can see below, we succesfully connected to the API and the connection id 
 ![image](https://user-images.githubusercontent.com/55497058/116788172-32cb9e00-aa76-11eb-81b3-195999e39ba6.png)
 
 
+Now we are needed to have a custom route in our WebSocket API, which will echo the one client's message to other ones.
+
+First, lets write create the lambda for our custom echo handler route.
+
+Go to the lambda, create a new function, attached the same role which we attached to the connect-disconnect lambdas and then paste code which exists under this repo as EchoHandleRoute.py.
+
+After that go to the our Websocket api and type echo to  "New Route Key" under the Routes, then write echo and press okey (tic) ikon right of the place where you type echo. After it press integration request under the echo route and do the below configurations, attach the our custom route lambda as below.
+
+![image](https://user-images.githubusercontent.com/55497058/116788541-29dbcc00-aa78-11eb-83f4-ae37df130345.png)
+
+Then do not forget to deploy your API as we did previously, from the actions. Now, lets demo it.
+
+Open multiple terminals and connect to those terminals by the wscat command, after connection established, write one of them to {"action":"echo","data":"hello world"} and you will see output as below. 
 
 
+![image](https://user-images.githubusercontent.com/55497058/116788760-7ecc1200-aa79-11eb-9eaa-0be5dfb446fb.png)
 
+note: The error message is observed in the one which tries to send message. The reason is, it is trying to send message to all connected clients, including itself and it can do it naturally. This error can handled easiliy from the echo handler route code by preventing sender to send message itself.
 
+References:
 
-
+https://medium.com/swlh/creating-a-monitoring-application-with-aws-websockets-api-lambda-and-eventbridge-bca95b28cdb
+https://medium.com/swlh/real-time-chat-application-with-aws-websockets-7f06b833f02c
+https://medium.com/artificial-industry/adding-websockets-to-your-aws-serverless-application-d8b1631754f6
+https://medium.com/hackernoon/websockets-api-gateway-9d4aca493d39
+https://www.freecodecamp.org/news/real-time-applications-using-websockets-with-aws-api-gateway-and-lambda-a5bb493e9452/
 
 
 
