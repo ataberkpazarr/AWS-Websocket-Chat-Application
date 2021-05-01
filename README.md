@@ -33,6 +33,41 @@ WebSocket_PoC_ConnectRoute_Phase1.js and WebSocket_PoC_DisconnectRoute_Phase1.js
 
 ![image](https://user-images.githubusercontent.com/55497058/116787416-e1211480-aa71-11eb-82b9-8eaac1f4c595.png)
 
+After creating both disconnect and connect routes, now we are ready to create the Websocket API Gateway.
+
+Go to the API Gateway console, press Create API button, select WebSocket API from there and press build.
 
 
- 
+The creation steps as following:
+
+![image](https://user-images.githubusercontent.com/55497058/116787996-4f1b0b00-aa75-11eb-866a-cdffa84459e0.png)
+![image](https://user-images.githubusercontent.com/55497058/116788005-5510ec00-aa75-11eb-87f9-089a6ec27ee8.png)
+![image](https://user-images.githubusercontent.com/55497058/116788009-58a47300-aa75-11eb-94eb-4263ca48c13a.png)
+![image](https://user-images.githubusercontent.com/55497058/116788013-5b9f6380-aa75-11eb-99c6-944e186eca76.png)
+![image](https://user-images.githubusercontent.com/55497058/116788064-986b5a80-aa75-11eb-8611-01952b229af4.png)
+![image](https://user-images.githubusercontent.com/55497058/116788052-8db0c580-aa75-11eb-81ce-c38a5e48d250.png)
+
+
+After these steps, press Create and Deploy. Then it will be created but not deployed which means we needed to deploy it. So, we should deploy API as below.
+(https://user-images.githubusercontent.com/55497058/116788096-bf299100-aa75-11eb-99fe-468de6c8c966.png)
+
+Then we will se URL's for invoking our API. Let's try to connect and check if our connection id goes to the DynamoDB.
+
+We will use wscat for connection and you can use it after simple installation.
+
+As you can see below, we succesfully connected to the API and the connection id went to the DynamoDB, in the our active-connections table, under the items. Whenever you cut the connection, you will see that the connection id will be erased from active-connections.
+
+![image](https://user-images.githubusercontent.com/55497058/116788133-0152d280-aa76-11eb-9dc4-23f7844ed9c5.png)
+![image](https://user-images.githubusercontent.com/55497058/116788172-32cb9e00-aa76-11eb-81b3-195999e39ba6.png)
+
+
+
+
+
+
+
+
+
+
+
+
