@@ -21,6 +21,7 @@ Go to the IAM console and select AWS service as "Select type of trusted entity",
 Press next and in the new page, we will attach the policies that determines scope of the lambda which we will attached this role.
 Choose "AmazonAPIGatewayInvokeFullAccess", "AWSLambdaBasicExecutionRole " and  "AmazonDynamoDBFullAccess", from here. It should seen as below, then press create the role.
 
+![image](https://user-images.githubusercontent.com/55497058/116786602-82f23280-aa6d-11eb-8949-9c31c2de8980.png)
 
 
 Now we are ready for creating the routes that will be used in Websocket API gateway.
