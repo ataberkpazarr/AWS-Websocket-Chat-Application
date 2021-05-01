@@ -49,7 +49,7 @@ The creation steps as following:
 
 
 After these steps, press Create and Deploy. Then it will be created but not deployed which means we needed to deploy it. So, we should deploy API as below.
-(https://user-images.githubusercontent.com/55497058/116788096-bf299100-aa75-11eb-99fe-468de6c8c966.png)
+![image](https://user-images.githubusercontent.com/55497058/116788096-bf299100-aa75-11eb-99fe-468de6c8c966.png)
 
 Then we will se URL's for invoking our API. Let's try to connect and check if our connection id goes to the DynamoDB.
 
