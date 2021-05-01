@@ -3,7 +3,7 @@ const ddb = new AWS.DynamoDB.DocumentClient({region: 'us-east-2'});
 
 exports.handler = (event, context, callback) => {   
     const connectionId = event.requestContext.connectionId;    
-    addConnectionId(connectionId).then(() => {    
+    deleteConnectionId(connectionId).then(() => {    
         callback(null, {        statusCode: 200,     
         })    
         
@@ -11,5 +11,8 @@ exports.handler = (event, context, callback) => {
         ;}
 
 
-function addConnectionId(connectionId) {    
-    return ddb.delete({        TableName: 'active-connections',        Key: {            connectionid : connectionId,        },    }).promise();}
+function deleteConnectionId(connectionId) {    
+    return ddb.delete({        
+        TableName: 'active-connections',      
+        Key: {            connectionid : connectionId,        },  
+    }).promise();}
