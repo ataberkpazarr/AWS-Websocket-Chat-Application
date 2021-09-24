@@ -9,4 +9,4 @@ The main architecture is as following:
 ![resim](https://user-images.githubusercontent.com/55497058/116785780-03cc2100-aaa4-11eb-884c-f1e994df9fbe.png)
 
 The creation processes are exist in the below medium link.
-![resim](https://user-images.githubusercontent.com/55497058/134750176-b8783830-8131-4225-8d86-b8820fa5bae3.png)
+
