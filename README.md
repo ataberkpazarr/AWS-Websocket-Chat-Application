@@ -10,3 +10,4 @@ The main architecture is as following:
 
 The creation processes are exist in the below medium link.
 
+https://ataberkpazarr.medium.com/developing-an-web-socket-real-time-chat-application-architecture-with-aws-lambda-websocket-api-4e279883906
