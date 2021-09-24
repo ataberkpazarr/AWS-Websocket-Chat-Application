@@ -6,8 +6,6 @@ The main architecture is as following:
 
 ![resim](https://user-images.githubusercontent.com/55497058/134750193-d61ab9f0-cb26-4229-8bc2-b2978cb500c0.png)
 
-![resim](https://user-images.githubusercontent.com/55497058/116785749-e26b3500-aaa3-11eb-80d4-177339c375ad.png)
-
 ![resim](https://user-images.githubusercontent.com/55497058/116785780-03cc2100-aaa4-11eb-884c-f1e994df9fbe.png)
 
 The creation processes are exist in the below medium link.
